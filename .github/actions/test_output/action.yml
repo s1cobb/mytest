@@ -1,21 +1,12 @@
-name: play_with_output
-
-on: ['pull']
-
-jobs:
-
-    run-on: ubuntu-latest
-    steps:
-
-        # check out repository
-        - uses: actions/checkout@v2
-
-        # test the new workflow
-        - uses: ./.github/actions/test_output 
-
-        # run the python script
-        - run: python work1.py
-
-    outputs:
-        results-file: 
-        description: "path to results file"
+name: 'Example'
+description: 'Receives file and generates output'
+inputs:
+  file-path:  # id of input
+    description: "Path to test script"
+    required: true
+    default: 'tst.txt'
+outputs:
+  results-file: # id of output
+    description: "Path to results file"
+    required: true
+    default: 'test-complete.txt'

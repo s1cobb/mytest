@@ -11,4 +11,5 @@ print('second push 1/3')
 print('smith')
 
 print('save it')
+print('good stuff')
 sys.exit(1)

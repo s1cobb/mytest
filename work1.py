@@ -6,13 +6,11 @@ import sys
 print('im good')
 print('good good')
 print("will it pass lint")
-<<<<<<< HEAD
 print('first push 1/3')
 print('second push 1/3')
 print('smith')
 print('on nmaster lets work 01/10')
-=======
->>>>>>> rm the bad commit Revert "i messed up"
+print('')
 
 print('save it')
 print('good stuff')

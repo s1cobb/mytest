@@ -25,7 +25,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
         
     - name: test my action
-      uses: /home/osboxes/testing/github/actions/test_output good.txt
+      uses: ./.github/actions/test_output good.txt
       
     - name: Install dependencies
       run: |

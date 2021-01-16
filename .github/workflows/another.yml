@@ -1,0 +1,29 @@
+name: work_tmpmytest
+
+on:
+  push:
+    branches:
+      tmp_mytest
+  pull:
+    branches:
+      tmp_mytest
+
+jobs:
+   job_one:
+     run-on: ubuntu-latest
+
+     outputs:
+        output1: ${{ steps.step1.outputs.test}}
+        output2: ${{ steps.step2.outputs.test}}
+
+     steps:
+     - id: step1
+       run: echo "::set-output name=test::steve"
+     - id: step2
+       run: echo "::set-output name=test::sally_jane"
+
+  job_two:
+    runs-on: ubuntu-latest
+    needs: job_one
+    steps:
+    - run: echo ${{needs.job_one.outputs.output1}} ${{needs.job_one.outputs.output2}}

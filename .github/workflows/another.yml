@@ -22,8 +22,8 @@ jobs:
      - id: step2
        run: echo "::set-output name=test::sally_jane"
 
-  job_two:
-    runs-on: ubuntu-latest
-    needs: job_one
-    steps:
-    - run: echo ${{needs.job_one.outputs.output1}} ${{needs.job_one.outputs.output2}}
+   job_two:
+     runs-on: ubuntu-latest
+     needs: job_one
+     steps:
+     - run: echo ${{needs.job_one.outputs.output1}} ${{needs.job_one.outputs.output2}}

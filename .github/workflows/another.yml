@@ -4,7 +4,7 @@ on:
   push:
     branches:
       tmp_mytest
-  pull:
+  pull_request:
     branches:
       tmp_mytest
 

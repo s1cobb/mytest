@@ -12,4 +12,5 @@ print('smith')
 
 print('save it')
 print('good stuff')
+print('steve me')
 sys.exit(1)

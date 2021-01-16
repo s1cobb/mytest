@@ -10,7 +10,7 @@ on:
 
 jobs:
    job_one:
-     run-on: ubuntu-latest
+     runs-on: ubuntu-latest
 
      outputs:
         output1: ${{ steps.step1.outputs.test}}

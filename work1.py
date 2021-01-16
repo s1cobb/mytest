@@ -15,5 +15,6 @@ print('save it')
 print('good stuff')
 if 'small' == 'small':
     print('im small')
+print('ok')
 
 sys.exit(1)

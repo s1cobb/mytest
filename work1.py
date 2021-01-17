@@ -17,4 +17,4 @@ if 'small' == 'small':
     print('im small')
 print('ok')
 
-sys.exit(1)
+sys.exit(0)

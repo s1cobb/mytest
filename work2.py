@@ -2,4 +2,4 @@ import sys
 
 
 print('my name is billy')
-sys.exit(1)
+sys.exit(0)

@@ -1,6 +1,17 @@
 import sys
+import re
 
 # missing csv module
+if re.match('(3.7.5)', sys.version):
+    m = re.match('(3.7.5)', sys.version)
+    if m:
+        print(m.group(1))
+elif re.match('(2.7.18)', sys.version):
+    m = re.match('(2.7.18)', sys.version)
+    if m:
+        print(m.group(1))
+else:
+    print('invalid version...')
 
 print('im good')
 print('good good')
@@ -17,4 +28,4 @@ if 'small' == 'small':
     print('im small')
 print('ok')
 
-sys.exit(1)
+sys.exit(0)

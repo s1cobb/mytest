@@ -28,4 +28,5 @@ if 'small' == 'small':
     print('im small')
 print('ok')
 
+print('forgive')
 sys.exit(0)

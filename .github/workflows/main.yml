@@ -1,7 +1,8 @@
 name: "docker setup"
 
-on: push
-   branch: master
+on:
+  push:
+   branches: master
 
 jobs:
    hello_world_job:
@@ -14,5 +15,5 @@ jobs:
             with:
                who-to-greet: 'mona the octocat'
 
-         - name: get the output time
-           run: echo "the time is ${{ steps.hello.outputs.time }}"
+          - name: "get the output time"
+            run: echo "the time is ${{ steps.hello.outputs.time }}"

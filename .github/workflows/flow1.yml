@@ -5,7 +5,7 @@ on:
        types: [ created, edited ]
 
 jobs:
-    name: job1
+    job1:
       runs-on: ubuntu-latest
 
       steps:
@@ -16,16 +16,16 @@ jobs:
             last_name: octocat
         run: |
            echo $my_var $first_name $last_name.
+           
+    job2:
+       runs-on: ubuntu-latest
+       needs: job1
 
-    name: job2
-    needs: job1
-      runs-on: ubuntu-latest
-
-      steps:
-      - name: second job run
-        env:
-            done: finished
-        run: echo $done
+       steps:
+       - name: second job run
+         env:
+           done: finished
+         run: echo $done
 
 
 

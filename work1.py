@@ -24,6 +24,7 @@ print('')
 
 print('save it')
 print('good stuff')
+<<<<<<< HEAD
 if 'small' == 'small':
     print('im small')
 print('ok')
@@ -31,3 +32,7 @@ print('ok')
 print('forgive')
 print('testing')
 sys.exit(0)
+=======
+print('steve me')
+sys.exit(1)
+>>>>>>> bfae782b4d9dffe12cf1eee7d4e48e1e52ac80fe
